@@ -22,6 +22,11 @@ def oops():
 def weeeee():
     return('<a href = https://www.youtube.com/watch?v=5IsSpAOD6K8> this is the end of the road, cowboy </a>')
 
+@app.route("/yinange")
+def poeioe():
+    with open("static/hey.html", 'r') as fin:
+        return fin.read()
+
 
 
 
