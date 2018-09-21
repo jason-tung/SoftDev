@@ -1,3 +1,8 @@
+# azrael - Jason Tung and <<<NAME>>>
+# SoftDev1 pd8
+# K<<NUMBER>> -- <<<FILL THIS OUT>>>
+# <<YEAR-MON-DAY>>
+
 from flask import Flask
 app = Flask(__name__)
 
