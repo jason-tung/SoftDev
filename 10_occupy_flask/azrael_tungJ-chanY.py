@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     f = occupy.convert("data/occupations.csv")
-    return (render_template("occupyTemplate.html",random_occupation=occupy.pickRandom(f),dict=f.items()))
+    return (render_template("occupyTemplate.html",random_occupation=occupy.pickRandom(f),dict=f))
 
 app.debug = True
 app.run()

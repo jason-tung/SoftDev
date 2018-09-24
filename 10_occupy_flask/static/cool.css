@@ -1,11 +1,37 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins")
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body{
-    background-image: url(../static/unpleasant.gif);
-    background-color: black;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-image:url(../static/unpleasant.gif);
+    background-color:black;
+    background-size:contain,cover;
+    background-position: center,center;
     font-family: "Poppins";
     color: white;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }

@@ -7,20 +7,24 @@
     <title>oCCUpatiiiiooooonnssssssss</title>
 </head>
 <body>
-random_occupation : {{random_occupation}}
+<center>
+random_occupation : {{random_occupation}} </br>
+    <a href = {{dict[random_occupation][1]}} target="_blank"> click me to learn more! </a> </br>
+    alternatively, click any of the jobs below to be taken to a job opportunity page in that corresponding field!</br>
 
-<table border = 1 style = "border: 1px solid black; padding: 30px;">
+
+<table border = 1 style = "border: 1px solid black; padding: 20px;">
     <tr>
-        <th>occupation</th>
-        <th>%</th>
+        <th width = 65%>occupation</th>
+        <th width = 30%>%</th>
     </tr>
-    {% for key, value in dict %}
+    {% for key, value in dict.items() %}
     <tr>
-        <td>{{key}}</td>
-        <td>{{value}}</td>
+        <td><a href = {{value[1]}}>{{key}}</a></td>
+        <td>{{value[0]}}</td>
     </tr>
     {% endfor %}
 </table>
-
+    </center>
 </body>
 </html>
