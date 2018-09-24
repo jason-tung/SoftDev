@@ -2,23 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <link rel="stylesheet" type="text/css" href="../static/cool.css?q=hey">
+    <!--USE THIS STYLE SHEET LOCATED AT STATIC/COOL.CSS-->
+    <link rel="stylesheet" type="text/css" href="../static/cool.css?q=werasd">
+    <!--TITLE IS MY TEAM NAME-->
     <title>azrael</title>
 </head>
-<body><center>
-
+<body>
+<!--CENTER MY SHTUFF-->
+    <center>
+        <!--MY DIV TO SEPARATE BLURB FORM TABLE-->
         <div>
+            <!--PASS IN THE RANDOM OCCUPATION FROM MY FLASK APP-->
             random_occupation : {{random_occupation}} </br>
+            <!--PASS IN THE LINK ATTACHED TO THE OCCUPATION-->
             <a href = {{dict[random_occupation][1]}} target="_blank"> click me to learn more! </a> </br>
             alternatively, click any of the jobs below to be taken to a job opportunity page in that corresponding field!</br>
 
         </div>
         <table>
             <tr>
+                <!--FORMATTED TABLE HEAD-->
                 <th width = 70%>occupation</th>
                 <th width = 30%>%</th>
             </tr>
+            <!--FOR EACH OCCUPATION, HYPERLINK THE APPROPRIATE LNK AND PERCENTAGE-->
             {% for key, value in dict.items() %}
             <tr>
                 <td><a href = {{value[1]}}>{{key}}</a></td>

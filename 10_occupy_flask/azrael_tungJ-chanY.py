@@ -7,12 +7,17 @@ import occupy
 from flask import Flask, render_template
 app = Flask(__name__)
 
+#homepage instantly redirects to occupation
 @app.route("/")
+def dog():
+    return ('''<html><head><meta http-equiv="refresh" content="0; URL='/occupations'" /></headZ></html>''')
+
+#take my occupy tmeplate in my templates folder and pass in a random occupation as well as the dictionary for the values (link + percentage)
+@app.route("/occupations")
 def main():
-    #make the dictionary occupation : [%,link]
     f = occupy.convert("data/occupations.csv")
-    #make website pass template vars
     return (render_template("occupyTemplate.html",random_occupation=occupy.pickRandom(f),dict=f))
 
+#RUN IT!!!
 app.debug = True
 app.run()
