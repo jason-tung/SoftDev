@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d1e7567-c1cc-4ee4-a2f1-d85b02ca7d22" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/10_occupy_flask/occupy.py" beforeDir="false" afterPath="$PROJECT_DIR$/10_occupy_flask/occupy.py" afterDir="false" />
+=======
+>>>>>>> 7a7feb74b1a1bd8da8545e85a3c0fa4b49a7860a
       <change beforePath="$PROJECT_DIR$/10_occupy_flask/static/cool.css" beforeDir="false" afterPath="$PROJECT_DIR$/10_occupy_flask/static/cool.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10_occupy_flask/templates/occupyTemplate.html" beforeDir="false" afterPath="$PROJECT_DIR$/10_occupy_flask/templates/occupyTemplate.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +34,16 @@
       <file leaf-file-name="occupyTemplate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10_occupy_flask/templates/occupyTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="270">
               <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+=======
+            <state relative-caret-position="30">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+>>>>>>> 7a7feb74b1a1bd8da8545e85a3c0fa4b49a7860a
             </state>
           </provider>
         </entry>
@@ -41,13 +51,18 @@
       <file leaf-file-name="cool.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10_occupy_flask/static/cool.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="763">
               <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+=======
+            <state relative-caret-position="120">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+>>>>>>> 7a7feb74b1a1bd8da8545e85a3c0fa4b49a7860a
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="occupations.csv" pinned="false" current-in-tab="false">
+      <file leaf-file-name="occupations.csv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/10_occupy_flask/data/occupations.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -578,10 +593,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10_occupy_flask/data/occupations.csv">
+    <entry file="file://$PROJECT_DIR$/10_occupy_flask/occupy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        <state relative-caret-position="300">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -592,6 +607,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/10_occupy_flask/static/cool.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="763">
@@ -603,13 +619,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+=======
+    <entry file="file://$PROJECT_DIR$/10_occupy_flask/templates/occupyTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+>>>>>>> 7a7feb74b1a1bd8da8545e85a3c0fa4b49a7860a
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/10_occupy_flask/occupy.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state>
           <caret column="85" selection-start-column="85" selection-end-column="85" />
+=======
+        <state relative-caret-position="120">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10_occupy_flask/data/occupations.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+>>>>>>> 7a7feb74b1a1bd8da8545e85a3c0fa4b49a7860a
         </state>
       </provider>
     </entry>
