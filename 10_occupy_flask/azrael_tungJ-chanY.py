@@ -9,7 +9,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
+    #make the dictionary occupation : [%,link]
     f = occupy.convert("data/occupations.csv")
+    #make website pass template vars
     return (render_template("occupyTemplate.html",random_occupation=occupy.pickRandom(f),dict=f))
 
 app.debug = True
