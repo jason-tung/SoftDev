@@ -1,4 +1,4 @@
-# azrael - Jason Tung and Simon Tsui
+# azrael - Jason Tung and Simon Tsui (updated on 09/24/18 to use for 10_occupy_flask)
 # SoftDev1 pd8
 # K10 -- StI/O: Divine your Destiny!
 # 2018-09-13

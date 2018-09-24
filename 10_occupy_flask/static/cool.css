@@ -1,16 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
-body{
-    background-image:url(../static/unpleasant.gif);
-    background-color:black;
-    background-size:contain,cover;
-    background-position: center,center;
+body {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url(../static/unpleasant.gif);
+    background-color: black;
+    background-size: contain, cover;
+    background-position: center, center;
     font-family: "Poppins";
     color: white;
 }
 
 html, body {
     height: 100%;
+    text-align:center;
 }
 
 html {
@@ -34,4 +38,20 @@ a:hover {
 
 a:active {
     text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    padding-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-color: white;
+    text-align:center;
+    table-layout: auto;
+}
+
+div{
+    padding: 20px;
 }
