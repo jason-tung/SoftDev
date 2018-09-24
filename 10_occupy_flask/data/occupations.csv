@@ -1,24 +1,24 @@
-Job Class,Percentage
-Management,6.1
-Business and Financial operations,5
-Computer and Mathematical,2.7
-Architecture and Engineering,1.7
-"Life, Physical and Social Science",0.9
-Community and Social Service,1.6
-Legal,0.8
-"Education, training and library",6.1
-"Arts, design, entertainment, sports and media",1.7
-Healthcare practioners and technical,5.5
-Healthcare support,2.8
-Protective service,2.3
-Food preparation and serving,8.3
-Building and grounds cleaning and maintenance,3.7
-Personal care and service,4
-Sales,10.2
-Office and administrative support,15.1
-"Farming, fishing and forestry",0.6
-Construction and extraction,4.3
-"Installation, maintenance and repair",3.8
-Production,6.1
-Transportation and material moving,6.5
-Total,99.8
+Job Class,Percentage,Link
+Management,6.1,https://www.indeed.com/q-Management-jobs.html
+Business and Financial operations,5,https://www.indeed.com/q-Finance-jobs.html
+Computer and Mathematical,2.7,https://www.indeed.com/q-Math-Computer-Science-jobs.html
+Architecture and Engineering,1.7,https://www.indeed.com/q-Architectural-Engineer-jobs.html
+"Life, Physical and Social Science",0.9,https://www.indeed.com/q-Physical-Scientist-jobs.html
+Community and Social Service,1.6,https://www.indeed.com/q-Community-Service-jobs.html
+Legal,0.8,https://www.indeed.com/q-Legal-jobs.html
+"Education, training and library",6.1,https://www.indeed.com/q-Education-jobs.html
+"Arts, design, entertainment, sports and media",1.7,https://www.indeed.com/q-Art-jobs.html
+Healthcare practioners and technical,5.5,https://www.indeed.com/q-Healthcare-Practitioner-jobs.html
+Healthcare support,2.8,https://www.indeed.com/cmp/Healthcare-Support-Staffing
+Protective service,2.3,https://www.indeed.com/q-Protective-Services-jobs.html
+Food preparation and serving,8.3,https://www.indeed.com/q-Food-jobs.html
+Building and grounds cleaning and maintenance,3.7,https://www.indeed.com/q-Cleaning-Grounds-Maintenance-jobs.html
+Personal care and service,4,https://www.indeed.com/q-Personal-Care-Services-jobs.html
+Sales,10.2,https://www.indeed.com/q-Sales-jobs.html
+Office and administrative support,15.1,https://www.indeed.com/q-Office-Administrative-Assistant-jobs.html
+"Farming, fishing and forestry",0.6,https://www.indeed.com/q-Farm-jobs.html
+Construction and extraction,4.3,https://www.indeed.com/q-Construction-jobs.html
+"Installation, maintenance and repair",3.8,https://www.indeed.com/q-Installer-jobs.html
+Production,6.1,https://www.indeed.com/q-Production-jobs.html
+Transportation and material moving,6.5,https://www.indeed.com/q-Transportation-jobs.html
+Total,99.8,"none"

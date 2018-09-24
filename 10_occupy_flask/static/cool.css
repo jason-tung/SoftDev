@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins")
+
+body{
+    background-image: url(../static/unpleasant.gif);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Poppins";
+    color: white;
+}

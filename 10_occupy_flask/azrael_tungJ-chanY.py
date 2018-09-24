@@ -1,6 +1,6 @@
 # azrael - Jason Tung and YinOn Chan
 # SoftDev1 pd8
-# K10 -- <<<FILL THIS OUT>>>
+# K10 -- Jinja Tuning
 # 2018-09-21
 
 import occupy

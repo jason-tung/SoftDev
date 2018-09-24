@@ -1,4 +1,4 @@
-# azrael - Jason Tung and SOMEONEHERE!!!!!!!!
+# azrael - Jason Tung and Simon Tsui
 # SoftDev1 pd8
 # K10 -- StI/O: Divine your Destiny!
 # 2018-09-13
@@ -10,7 +10,7 @@ def convert(filename):
     #open file and parse it into a generator using csv reader
     #convert the generator into a list exluding the job and percentage table headers and footers
     #read values two at a time as tuples and use those to create a key value pair
-    f = {k:float(v) for k,v in list(csv.reader(open(filename)))[1:-1]}
+    f = {k:[float(v1),v2] for k,v1,v2 in list(csv.reader(open(filename)))[1:-1]}
     return f
 
 def pickRandom(f):
@@ -18,7 +18,8 @@ def pickRandom(f):
     #pick a number, any number (as long as it's an element of [0,99.8))
     rand = random.uniform(0, 99.8)
     #go through key value pairs in f
-    for k,v in f.items():
+    for k,vt in f.items():
+        v = vt[0]
         rand -= v
         #when the cumulative total is greater than the random value, return that key
         if rand <= 0:
