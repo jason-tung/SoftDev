@@ -3,7 +3,7 @@
 # K10 -- Jinja Tuning
 # 2018-09-21
 
-import occupy
+import util.occupy
 from flask import Flask, render_template
 app = Flask(__name__)
 
