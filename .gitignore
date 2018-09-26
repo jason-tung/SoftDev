@@ -123,6 +123,10 @@ _*
 Thumbs.db
 ehthumbs.db
 
+#.idea files
+*.xml
+*.iml
+
 # Filenames with special characters
 **/*[\\/\:;*?!'"<>|$º•¶§∞¢£]*
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
