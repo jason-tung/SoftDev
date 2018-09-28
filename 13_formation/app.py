@@ -19,11 +19,9 @@ def hello_world():
 def hello_world1():
     print("app: ", app)
     print("request: ", request)
-    print("args: " ,request.args)
     print("req.args indexed", request.args['usrname'])
-    print("req.form indexed", request.form['usrname'])
     print("FFFDSFDSKFJKDSNFJKDSNFJKDNSKJF")
-    return (render_template("kitt.hyml", username=request.args['usrname'], method=request.method))
+    return (render_template("kitty.html", usrname=request.args['usrname'], method=request.method))
 
 if __name__ == "__main__":
     app.debug = True
