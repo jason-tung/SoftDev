@@ -1,0 +1,15 @@
+{% extends "brother.html" %}
+{%block title%}
+    login
+{%endblock%}
+{%block body%}
+    <h2>WEEEEEEEEEEEEEEEEE</h2>
+    <form action="/auth" method="POST">
+      give me ur username:<br>
+        <input type="text" name="username" value = 'Username'> <br>
+        give me ur password:<br>
+        <input type="password" name="password" value = 'Password'>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+{%endblock%}
