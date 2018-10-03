@@ -1,7 +1,7 @@
 # azrael - Jason Tung and Hasif Ahmed
 # SoftDev1 pd8
-# K14 -- Do I Know You?
-# 2018-10-02
+# K15 -- Oh yes, perhaps I do...
+# 2018-10-03
 import string, random, os
 
 from flask import Flask, url_for, render_template, request, session, redirect, flash
