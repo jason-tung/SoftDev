@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+{%block head%}
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../static/cool.css?q=343ujoi4hiu32hi2">
-    <title>{% block title %} {%endblock%}</title>
+    <link rel="stylesheet" type="text/css" href="../static/cool.css?q=3232jcsv">
+    <title>{% block title %} {%endblock%} -|- Homework 15</title>
 </head>
+{%endblock%}
 <body>
-{% block body %} {%endblock%}
+
+{% block response %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for category, message in messages %}
+        <div class={{category}}>{{ message }}</div>
+      {% endfor %}
+    {% endwith %}
+{% endblock %} 
+     
+{% block body %}
+{% endblock %}
+
+<br>
+<br>
+{% block footer %}
+&copy; Ahmed and Tung, Very Nice Co.
+{% endblock %}
+
 </body>
 </html>

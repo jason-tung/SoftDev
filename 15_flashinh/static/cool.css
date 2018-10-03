@@ -54,6 +54,10 @@ table, th, td {
     table-layout: auto;
 }
 
-div{
-    padding: 20px;
+.error {
+    color: red;
+}
+
+.success {
+    color: lime;
 }
