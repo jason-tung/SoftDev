@@ -2,7 +2,7 @@
 #SoftDev1 pd8
 #K17 -- Average
 #2018-10-09
-
+import copy
 import sqlite3  # enable control of an sqlite database
 import csv  # facilitates CSV I/O
 
@@ -22,19 +22,32 @@ def createtable(filename, tablename):
 
     # executing row statements--------------------------------------------------------------------------
     with open(filename) as csvfile:
-        reader = csv.DictReader(csvfile)
+        reader = list(csv.DictReader(csvfile))
+        headers = reader[0]
         command = "DROP TABLE IF EXISTS {0};".format(tablename)
+        #print(command)
         c.execute(command)
         command = "CREATE TABLE IF NOT EXISTS {0}(".format(tablename)
-        for row in reader:
-            for keys in row:
+        for keys in headers:
                 command+= keys + " BLOB,"
         command = command[:-1]+ ");"
+        #print(command)
+        #print(command)
         c.execute(command)
+        headerstr = ""
+        for header in headers:
+            headerstr+=header + ","
+        headerstr=headerstr[:-1]
         for row in reader:
-            for k,v in row:
-                command = "INSERT INTO {0} VALUES {1};".format(k, v)
-                c.execute(command)
+            #print(row)
+            vals = ""
+            for k,v in row.items():
+                vals += "'{0}'".format(v) + ","
+            vals = vals[:-1]
+            command = "INSERT INTO {0}({1}) VALUES({2});".format(tablename,headerstr, vals)
+            #print(command)
+            c.execute(command)
+        c.execute("SELECT * FROM {0};".format(tablename))
     # --------------------------------------------------------------------------------------------------
 
 # ==========================================================
