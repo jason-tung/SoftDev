@@ -98,7 +98,7 @@ def printTable(name):
     print(c.fetchall())
 
 def addStuff(code, id, mark):
-    c.execute("INSERT INTO courses_info VALUES('{code}','{id}','{mark}')".format(code = code,id = id,mark = mark))
+    c.execute("INSERT INTO courses_info VALUES('{code}','{id}','{mark}');".format(code = code,id = id,mark = mark))
     
 
 createAvgtbl()
