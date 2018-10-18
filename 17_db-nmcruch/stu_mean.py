@@ -30,7 +30,7 @@ def createtable(filename, tablename):
         c.execute(command)
         command = "CREATE TABLE IF NOT EXISTS {0}".format(tablename)
         command += "("
-        for keys in headers:
+        for keys in headers.keys()[::-1]:
                 command+= keys + " BLOB,"
         command = command[:-1]+ ");"
         #print(command)
