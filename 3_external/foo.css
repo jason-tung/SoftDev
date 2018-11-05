@@ -1,0 +1,40 @@
+body {
+    background-color: gray;
+    font-family: Times New Roman, Times, serif;
+}
+        
+h1 {
+    text-align:center; 
+    background-color: lightgray;
+}
+
+h3 {
+    width: 160px; 
+    padding: 0; 
+    margin: 0; 
+    position: fixed;
+}
+
+ul {
+    width: 160px; 
+    list-style-type:none; 
+    padding: 0; 
+    padding-top: 20px; 
+    margin: 0;
+    position: fixed;
+}
+
+a {
+    text-decoration: none; 
+    color: white;
+}
+
+h2, p {
+    margin-left: 160px
+}
+
+footer {
+    text-align:right; 
+    background-color:#575757; 
+    color: lightgray;
+}
