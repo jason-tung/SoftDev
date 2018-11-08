@@ -7,7 +7,7 @@ K21 -- Who Does Frame Work For?
 
 <!doctype html>
 <html lang="en">
-  <head>
+    <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,82 +15,136 @@ K21 -- Who Does Frame Work For?
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
-  </head>
-  <body style = "font-family: 'Comic Sans MS'; text-align: center" class = "container-fluid">
+    <title>Bootstrap Demo</title>
+    </head>
 
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <body>
+        <div class="container-fluid">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home (Ln 34) <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link (Ln 37)</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Click dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"> DROP DOWN </a>
+                                <a class="dropdown-item" href="#"> CHECK </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"> Ln 39-48</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled (ln 51)</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <h1> Bootstrap Demo </h1>
+
+            <table class="table table-striped table-hover">
+
+                <thead class="thead-dark">
+                    <th> # </th>
+                    <th> Animal </th>
+                    <th> Dark Theme Header <span class="badge badge-info">(ln 59)</span> </th>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td> Panda </td>
+                    <td> Striped Rows <span class="badge badge-info">(ln 59)</span> </td>
+                </tr>
+
+                <tr>
+                    <td> 2 </td>
+                    <td> Bear </td>
+                    <td> Hoverable <span class="badge badge-info">(ln 59)</span> </td>
+                </tr>
+
+                <tr>
+                    <td> 3</td>
+                    <td> Racoon </td>
+                    <td> Hoverable <span class="badge badge-info">(ln 67 + 85)</span> </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h3> All the button! </h3>
+            <h5> Check line 90 - 97 </h5>
+            <p> The class for the buttons are "btn btn-[name of button]" </p>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+
+            <br> <br>
+
+            <p> The class for this button is "btn btn-outline-[name of button] (ln 103)" </p>
+            <button type="button" class="btn btn-outline-info">Buttons not filled</button>
+
+            <br>
+
+            <p> Create large and small buttons with btn-lg and btn-sm, respectively </p>
+
+            <button type="button" class="btn btn-outline-info btn-lg">Large Button (ln 111)</button>
+            <button type="button" class="btn btn-outline-info btn-sm">Small Button (ln 112)</button>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Fu manchu tricky sneezes marquess of queensbury driving gloves karl marx, cripes marquess of queensbury fu manchu tricky sneezes goose villain karl marx driving gloves? Don’t panic holiday waiter alpha trion doctor watson. got milk cappuccino collector?
+
+Andrew weatherall give him what-for handsome lipwig bruce forsyth 118 118, arcu andrew weatherall charming villain bruce forsyth lipwig spaghetti western Milkshake issues beefeater handsome 118 118 dick dastardly give him what-for, arcu dick dastardly barber shop quartet spaghetti western Milkshake issues middle eastern despot et handsome andrew weatherall 118 118 beefeater charming villain give him what-for bruce forsyth groomed lipwig? Trimmed blacksmith erudite headmaster pit fighter top gun waxy gurn man markings dick dastardly?
+
+Mustachio nuremberg rally consectetur consectetur hungarian old man in pub louis xiii, consectetur louis xiii challenge you to a duel nuremberg rally socially mobile hungarian casual style old man in pub arcu mustachio consectetur? Rugged fox hunting wario, basil fawlty fox hunting bad guy wario nuremberg rally rugged.
+
+Elit worn with distinction john cleese?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Fu manchu tricky sneezes marquess of queensbury driving gloves karl marx, cripes marquess of queensbury fu manchu tricky sneezes goose villain karl marx driving gloves? Don’t panic holiday waiter alpha trion doctor watson. got milk cappuccino collector?
+
+Andrew weatherall give him what-for handsome lipwig bruce forsyth 118 118, arcu andrew weatherall charming villain bruce forsyth lipwig spaghetti western Milkshake issues beefeater handsome 118 118 dick dastardly give him what-for, arcu dick dastardly barber shop quartet spaghetti western Milkshake issues middle eastern despot et handsome andrew weatherall 118 118 beefeater charming villain give him what-for bruce forsyth groomed lipwig? Trimmed blacksmith erudite headmaster pit fighter top gun waxy gurn man markings dick dastardly?
+
+Mustachio nuremberg rally consectetur consectetur hungarian old man in pub louis xiii, consectetur louis xiii challenge you to a duel nuremberg rally socially mobile hungarian casual style old man in pub arcu mustachio consectetur? Rugged fox hunting wario, basil fawlty fox hunting bad guy wario nuremberg rally rugged.
+
+Elit worn with distinction john cleese?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Fu manchu tricky sneezes marquess of queensbury driving gloves karl marx, cripes marquess of queensbury fu manchu tricky sneezes goose villain karl marx driving gloves? Don’t panic holiday waiter alpha trion doctor watson. got milk cappuccino collector?
+
+Andrew weatherall give him what-for handsome lipwig bruce forsyth 118 118, arcu andrew weatherall charming villain bruce forsyth lipwig spaghetti western Milkshake issues beefeater handsome 118 118 dick dastardly give him what-for, arcu dick dastardly barber shop quartet spaghetti western Milkshake issues middle eastern despot et handsome andrew weatherall 118 118 beefeater charming villain give him what-for bruce forsyth groomed lipwig? Trimmed blacksmith erudite headmaster pit fighter top gun waxy gurn man markings dick dastardly?
+
+Mustachio nuremberg rally consectetur consectetur hungarian old man in pub louis xiii, consectetur louis xiii challenge you to a duel nuremberg rally socially mobile hungarian casual style old man in pub arcu mustachio consectetur? Rugged fox hunting wario, basil fawlty fox hunting bad guy wario nuremberg rally rugged.
+
+Elit worn with distinction john cleese?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Fu manchu tricky sneezes marquess of queensbury driving gloves karl marx, cripes marquess of queensbury fu manchu tricky sneezes goose villain karl marx driving gloves? Don’t panic holiday waiter alpha trion doctor watson. got milk cappuccino collector?
+
+Andrew weatherall give him what-for handsome lipwig bruce forsyth 118 118, arcu andrew weatherall charming villain bruce forsyth lipwig spaghetti western Milkshake issues beefeater handsome 118 118 dick dastardly give him what-for, arcu dick dastardly barber shop quartet spaghetti western Milkshake issues middle eastern despot et handsome andrew weatherall 118 118 beefeater charming villain give him what-for bruce forsyth groomed lipwig? Trimmed blacksmith erudite headmaster pit fighter top gun waxy gurn man markings dick dastardly?
+
+Mustachio nuremberg rally consectetur consectetur hungarian old man in pub louis xiii, consectetur louis xiii challenge you to a duel nuremberg rally socially mobile hungarian casual style old man in pub arcu mustachio consectetur? Rugged fox hunting wario, basil fawlty fox hunting bad guy wario nuremberg rally rugged.
+
+Elit worn with distinction john cleese?</p>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-
-
-
-    <h1>Hello, world!</h1>
-    <p> wow bootstrap use cool preset font that is not tiems new roman</p>
-
-    <p>lines 25 to 28! look at all these cool preset classes!</p>
-    <div>
-    <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary <span class="badge badge-light">light badge!</span> </button>
-<button type="button" class="btn btn-success">Success <span class="badge badge-primary">primary badge!</span></button>
-<button type="button" class="btn btn-danger">Danger</button>
-</div>
-    <br>
-    <br>
-    <!-- Example single danger button -->
-    <div>
-<div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-    <div class="dropdown-divider">hey dude</div>
-    <a class="dropdown-item" href="#">Separated link</a>
-  </div>
-</div>
-        </div>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>
