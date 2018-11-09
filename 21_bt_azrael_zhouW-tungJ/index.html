@@ -1,3 +1,4 @@
+
 <!--
 azrael - Jason Tung and Wei Wen Zhou
 SoftDev1 pd8
@@ -15,79 +16,116 @@ K21 -- Who Does Frame Work For?
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
     <title>Bootstrap Demo</title>
     </head>
-
-
+    
+    
     <body>
-        <div class="container-fluid">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                <a class="navbar-brand" href="#">Navbar</a>
+        <div class="container container-fluid ">
+            
+            <nav class="navbar navbar-expand-lg bg-dark" >
+                <a class="navbar-brand" href="#">example_navbar_title</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                      <span class="navbar-toggler-icon"></span>
+                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    <ul class="navbar-nav mr-auto" >
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home (Ln 34) <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link (Ln 37)</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Click dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#"> DROP DOWN </a>
-                                <a class="dropdown-item" href="#"> CHECK </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"> Ln 39-48</a>
-                            </div>
+                            <a class="nav-link" href="#nav">navbar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled (ln 51)</a>
+                            <a class="nav-link" href="#fluid">fluid containers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#table">tables</a>
+                        </li><li class="nav-item">
+                            <a class="nav-link" href="#nav">navbar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#badges">badges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#button">buttons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#media">media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#grids">grids</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#forms">forms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">sample_disabled_button</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-
+            
             <h1> Bootstrap Demo </h1>
-
+            <h5 id = "nav"> navbar</h5>
+            navbar: at the top of the page to substitute a table of contents. clicking a section from the navbar will redirect you to that section.
+            <br><br>
+            <h5 id = "fluid"> fluid container </h5>
+            elements contained in the fluid container scale with the window size. try resizing the window.
+            <br><br>
+            <h5 id = "tables">tables</h5>
+            rows can recieve classes like striped and hover. <br> striped: the rows alternate in color <br> hover: rows darken when hovered over.<br>
+            <h3 id="table"> example table </h3>
             <table class="table table-striped table-hover">
 
                 <thead class="thead-dark">
                     <th> # </th>
-                    <th> Animal </th>
-                    <th> Dark Theme Header <span class="badge badge-info">(ln 59)</span> </th>
+                    <th> Animal  </th>
+                    <th> food </th>
                 </thead>
 
                 <tbody>
                 <tr>
                     <td> 1 </td>
                     <td> Panda </td>
-                    <td> Striped Rows <span class="badge badge-info">(ln 59)</span> </td>
+                    <td> bamboo </td>
                 </tr>
 
                 <tr>
                     <td> 2 </td>
-                    <td> Bear </td>
-                    <td> Hoverable <span class="badge badge-info">(ln 59)</span> </td>
+                    <td> Bear</td>
+                    <td> fish  </td>
                 </tr>
 
                 <tr>
                     <td> 3</td>
-                    <td> Racoon </td>
-                    <td> Hoverable <span class="badge badge-info">(ln 67 + 85)</span> </td>
+                    <td> Tiger </td>
+                    <td> you.  </td>
+                </tr>
+
+                <tr>
+                    <td> 4</td>
+                    <td> Shark</td>
+                    <td> fishies  </td>
                 </tr>
                 </tbody>
             </table>
+            <br><br>
+            <h5 id = "badges">badges</h5>
+            a type of span which allows for text.
+            <br>
+            scary shark <span class="badge badge-info">fishie</span>
 
-            <h3> All the button! </h3>
-            <h5> Check line 90 - 97 </h5>
-            <p> The class for the buttons are "btn btn-[name of button]" </p>
+            <br><br>
+
+            
+            <h5 id="button">buttons</h5>
+            bootstrap comes with predefined buttons like badges. here are some of them:<br>
             <button type="button" class="btn btn-primary">Primary</button>
             <button type="button" class="btn btn-secondary">Secondary</button>
             <button type="button" class="btn btn-success">Success</button>
@@ -97,54 +135,66 @@ K21 -- Who Does Frame Work For?
             <button type="button" class="btn btn-light">Light</button>
             <button type="button" class="btn btn-dark">Dark</button>
             <button type="button" class="btn btn-link">Link</button>
-
+            
             <br> <br>
+            <h5 id = "media">images with media-body</h5>
+            it is possible to attach media to a picture using bootstrap:
+             <div class="media">
+                <img class="mr-3" src="https://e.snmc.io/i/300/w/684f84f7fb8ecebe866b2f9496d4350f/1188523" alt="paul">
+                <div class="media-body">
+                    <h2 class="mt-0">Paul</h2>
+                    this is paul mccartney from beatles
+                </div>
+            </div>
 
-            <p> The class for this button is "btn btn-outline-[name of button] (ln 103)" </p>
-            <button type="button" class="btn btn-outline-info">Buttons not filled</button>
-
-            <br>
-
-            <p> Create large and small buttons with btn-lg and btn-sm, respectively </p>
-
-            <button type="button" class="btn btn-outline-info btn-lg">Large Button (ln 111)</button>
-            <button type="button" class="btn btn-outline-info btn-sm">Small Button (ln 112)</button>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-Fu manchu tricky sneezes marquess of queensbury driving gloves karl marx, cripes marquess of queensbury fu manchu tricky sneezes goose villain karl marx driving gloves? Don’t panic holiday waiter alpha trion doctor watson. got milk cappuccino collector?
-
-Andrew weatherall give him what-for handsome lipwig bruce forsyth 118 118, arcu andrew weatherall charming villain bruce forsyth lipwig spaghetti western Milkshake issues beefeater handsome 118 118 dick dastardly give him what-for, arcu dick dastardly barber shop quartet spaghetti western Milkshake issues middle eastern despot et handsome andrew weatherall 118 118 beefeater charming villain give him what-for bruce forsyth groomed lipwig? Trimmed blacksmith erudite headmaster pit fighter top gun waxy gurn man markings dick dastardly?
-
-Mustachio nuremberg rally consectetur consectetur hungarian old man in pub louis xiii, consectetur louis xiii challenge you to a duel nuremberg rally socially mobile hungarian casual style old man in pub arcu mustachio consectetur? Rugged fox hunting wario, basil fawlty fox hunting bad guy wario nuremberg rally rugged.
-
-Elit worn with distinction john cleese?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-Fu manchu tricky sneezes marquess of queensbury driving gloves karl marx, cripes marquess of queensbury fu manchu tricky sneezes goose villain karl marx driving gloves? Don’t panic holiday waiter alpha trion doctor watson. got milk cappuccino collector?
-
-Andrew weatherall give him what-for handsome lipwig bruce forsyth 118 118, arcu andrew weatherall charming villain bruce forsyth lipwig spaghetti western Milkshake issues beefeater handsome 118 118 dick dastardly give him what-for, arcu dick dastardly barber shop quartet spaghetti western Milkshake issues middle eastern despot et handsome andrew weatherall 118 118 beefeater charming villain give him what-for bruce forsyth groomed lipwig? Trimmed blacksmith erudite headmaster pit fighter top gun waxy gurn man markings dick dastardly?
-
-Mustachio nuremberg rally consectetur consectetur hungarian old man in pub louis xiii, consectetur louis xiii challenge you to a duel nuremberg rally socially mobile hungarian casual style old man in pub arcu mustachio consectetur? Rugged fox hunting wario, basil fawlty fox hunting bad guy wario nuremberg rally rugged.
-
-Elit worn with distinction john cleese?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-Fu manchu tricky sneezes marquess of queensbury driving gloves karl marx, cripes marquess of queensbury fu manchu tricky sneezes goose villain karl marx driving gloves? Don’t panic holiday waiter alpha trion doctor watson. got milk cappuccino collector?
-
-Andrew weatherall give him what-for handsome lipwig bruce forsyth 118 118, arcu andrew weatherall charming villain bruce forsyth lipwig spaghetti western Milkshake issues beefeater handsome 118 118 dick dastardly give him what-for, arcu dick dastardly barber shop quartet spaghetti western Milkshake issues middle eastern despot et handsome andrew weatherall 118 118 beefeater charming villain give him what-for bruce forsyth groomed lipwig? Trimmed blacksmith erudite headmaster pit fighter top gun waxy gurn man markings dick dastardly?
-
-Mustachio nuremberg rally consectetur consectetur hungarian old man in pub louis xiii, consectetur louis xiii challenge you to a duel nuremberg rally socially mobile hungarian casual style old man in pub arcu mustachio consectetur? Rugged fox hunting wario, basil fawlty fox hunting bad guy wario nuremberg rally rugged.
-
-Elit worn with distinction john cleese?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-Fu manchu tricky sneezes marquess of queensbury driving gloves karl marx, cripes marquess of queensbury fu manchu tricky sneezes goose villain karl marx driving gloves? Don’t panic holiday waiter alpha trion doctor watson. got milk cappuccino collector?
-
-Andrew weatherall give him what-for handsome lipwig bruce forsyth 118 118, arcu andrew weatherall charming villain bruce forsyth lipwig spaghetti western Milkshake issues beefeater handsome 118 118 dick dastardly give him what-for, arcu dick dastardly barber shop quartet spaghetti western Milkshake issues middle eastern despot et handsome andrew weatherall 118 118 beefeater charming villain give him what-for bruce forsyth groomed lipwig? Trimmed blacksmith erudite headmaster pit fighter top gun waxy gurn man markings dick dastardly?
-
-Mustachio nuremberg rally consectetur consectetur hungarian old man in pub louis xiii, consectetur louis xiii challenge you to a duel nuremberg rally socially mobile hungarian casual style old man in pub arcu mustachio consectetur? Rugged fox hunting wario, basil fawlty fox hunting bad guy wario nuremberg rally rugged.
-
-Elit worn with distinction john cleese?</p>
         </div>
+    <div class="container container-fluid">
+        <h5 id  = "grids">grids</h5>
+        bootstrap makes the webpage look like a grid so you can add divs accordingly. the screen is divided into 12 columns.<br>
+        <div class="row">
+            <div class = "col-md-4">
+                <h6>section one</h6>
+                <p>
+                    takes up the first 4 cols. <br>
+                    S e c t i o n O n e  S e c t i o n O n e  S e c t i o n O n e  S e c t i o n O n e  S e c t i o n O n e S e c t i o n O n e  S e c t i o n O n e  S e c t i o n O n e  S e c t i o n O n e  S e c t i o n O n e
+                </p>
+            </div>
+            <div class = "col-md-8">
+                <h6>section two</h6>
+                <p>
+                    this will take up the last 8 cols.<br>
+                    S e c t i o n T w o S e c t i o n T w o S e c t i o n T w o S e c t i o n T w o S e c t i o n T w o S e c t i o n T w o S e c t i o n T w o S e c t i o n T w o S e c t i o n T w o S e c t i o n T w o
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col-md-9">
+                <h6>section three</h6>
+                <p>
+                    takes up the first 9 cols. <br>
+                    lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                </p>
+            </div>
+        </div>
+
+        <h5 id = "forms"> forms </h5>
+        cool forms with form-control built in.<br>
+        <form>
+                        <div class="form-row">
+                             <div class="form-group">
+                                  <label for="name">favorite musician?</label>
+                                  <input type="text" class="form-control" placeholder="some_name_here">
+                             </div>
+                        </div>
+                        <div class="form-row">
+                             <div class="form-group">
+                                  <label for="inputLastName">iq</label>
+                                  <input type="text" class="form-control" placeholder="500">
+                             </div>
+
+                        </div>
+
+                   </form>
+    </div>
     </body>
 </html>
