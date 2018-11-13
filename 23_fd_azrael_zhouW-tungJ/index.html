@@ -1,0 +1,196 @@
+<!--
+azrael - Jason Tung and Wei Wen Zhou
+SoftDev1 pd8
+K23 -- How the Other Half Lives
+2018-11-13
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Foundation Features</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css">
+
+  </head>
+  <body>
+    <div class = "grid-container">
+      <div class = "grid-x grid-padding-x">
+        <h1>Foundation 2.0<small> by Azrael </small></h1>
+      </div>
+    </div>
+
+	 <div class="grid-x grid-padding-x">
+	<div class = "cell medium-2  medium-cell-block-y">
+	  <div class="vertical menu">
+	    <li><a href="#setup"><b>Setup</b></a></li>
+		<li><a href="#grid">Grid</a></li>
+		<li><a href="#button">Button </a></li>
+		<li><a href="#callout">Callout</a></li>
+		<li><a href="#table">Table </a></li>
+	  </div>
+	</div>
+
+    <div class = "cell medium-10 medium-cell-block-y">
+        <h2 id="setup">Setup</h2>
+        <p>The fastest way to start using the Foundation features showcased on this site is to simply add the CDN link into your HTML head section.
+            <br>
+            <br>
+            <code> &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0/dist/css/foundation.min.css"&gt; </code>
+            <br>
+            Alternatively, download the complete version <a href="https://foundation.zurb.com/sites/download/">here</a> for all the features available in the framework.
+        </p>
+
+        <a href="#">top </a>
+    <hr>
+
+    <h1>Grid System</h1>
+        Starting from full screen, try resizing the window so that it gets smaller and smaller.
+        The number after large denotes the columns that each cell takes up out of 12 since 12 columns is the default and most optimal.
+        The number after medium denotes what they do when the window is medium sized. And the number after small denotes
+        what they do when the window is small sized. See line 52-68.
+        <br>
+        <br>
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 medium-12 small-12 cell">
+                <p class="primary callout">"large-12 medium-12 small-12 cell"</p>
+            </div>
+            <div class="large-6 medium-9 small-3 cell">
+                <p class="primary callout">"large-6 medium-9 small-3 cell"</p>
+            </div>
+            <div class="large-6 medium-3 small-9 cell">
+                <p class="primary callout">"large-6 medium-3 small-9 cell"</p>
+            </div>
+
+            <div class="large-4 medium-4 small-4 cell">
+                <p class="primary callout">"large-4 medium-4 small-4 cell"</p>
+            </div>
+            <div class="large-4 medium-4 small-4 cell">
+                <p class="primary callout">"large-4 medium-4 small-4 cell"</p>
+            </div>
+            <div class="large-4 medium-4 small-4 cell">
+                <p class="primary callout">"large-4 medium-4 small-4 cell"</p>
+            </div>
+        </div>
+
+        <a href="#">top </a>
+        <hr>
+
+        <h2 id="button">Buttons</h2>
+        <h3>Coloring</h3>
+        <h5>Options: primary, secondary, success, alert, warning</h5>
+        Changes the button's color based on the class of button that is specified.
+        See line 68-72
+        <br>
+        <button type="button" class="button primary">Primary</button>
+        <button type="button" class="button secondary">Secondary</button>
+        <button type="button" class="button success">Success</button>
+        <button type="button" class="button alert">Alert</button>
+        <button type="button" class="button warning">Warning</button>
+        <br>
+        <h3>Sizing</h3>
+        <h5>Options: tiny, small, large, expanded</h5>
+        Changes the button's size based on the class of button that is specified.
+        Expanded will change the width of the button to fill the entire container.
+        See line 80-84
+        <br>
+        <button type="button" class="button tiny">Tiny</button>
+        <button type="button" class="button small">Small</button>
+        <button type="button" class="button">Original</button>
+        <button type="button" class="button large">Large</button>
+        <button type="button" class="button expanded">Expanded</button>
+        <h3>Others</h3>
+        <h5>Options: hollow, clear</h5>
+        Hollow creates a button without a background but with a border.<br>
+        Clear creates a button without a background nor a border.<br>
+        Disabled creates a button that looks like it is disabled; the disabled class must be added to actually disable it.
+        See line 92-94
+        <br>
+        <button type="button" class="button hollow">Hollow</button>
+        <button type="button" class="button clear">Clear</button>
+        <button type="button" class="button disabled">Disabled</button>
+        <br>
+        Any combination of these classes can also be created:
+        <button type="button" class="button large expanded alert hollow disabled" disabled>Large Expanded Alert Hollow Disabled Button</button>
+
+        <a href="#">top </a>
+        <hr>
+
+        <h2 id="callout">Callouts</h2>
+        Callouts are a type of container that creates a box and has styling features.
+        They also have the color and sizing options that can be found with buttons except tiny, expanded, hollow and clear.
+        See line 110-130
+        <div class="callout">
+            <h2>Heading</h2>
+            <p>hello world</p>
+            <a href="#">Link</a>
+        </div>
+
+        <div class="callout primary">
+            Primary Callout
+        </div>
+        <div class="callout secondary">
+            Secondary Callout
+        </div>
+        <div class="callout success">
+            Success Callout
+        </div>
+        <div class="callout alert">
+            Alert Callout
+        </div>
+        <div class="callout warning">
+            Warning Callout
+        </div>
+        <div class="callout small">
+            Small Callout
+        </div>
+        <div class="callout large">
+            Large Callout
+        </div>
+
+        <a href="#">top </a>
+        <hr>
+
+        <h3 id="table"> Example table </h3>
+        <p>
+            Rows can recieve classes like striped and hover. <br>
+            Striped: the rows alternate in color <br>
+            Hover: rows darken when hovered over.<br>
+        </p>
+        <table class="table table-striped table-hover">
+
+            <thead>
+                <th> # </th>
+                <th> Animal  </th>
+                <th> food </th>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td> 1 </td>
+                <td> Panda </td>
+                <td> bamboo </td>
+            </tr>
+
+            <tr>
+                <td> 2 </td>
+                <td> Bear</td>
+                <td> fish  </td>
+            </tr>
+
+            <tr>
+                <td> 3</td>
+                <td> Tiger </td>
+                <td> you.  </td>
+            </tr>
+
+            <tr>
+                <td> 4</td>
+                <td> Shark</td>
+                <td> fishies  </td>
+            </tr>
+            </tbody>
+        </table>
+        <a href="#">top </a>
+    </div>
+  </body>
+</html>
