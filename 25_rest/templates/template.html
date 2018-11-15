@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cat facts test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cool.css') }}">
+</head>
+<body>
+<h1> this is my test for cat-facts api!</h1>
+<h3>cat table!</h3>
+<center>
+<table border= 1>
+<tr>
+    <th>
+        breed
+    </th>
+    <th>
+        country
+    </th>
+    <th>
+        origin
+    </th>
+    <th>
+        coat
+    </th>
+    <th>
+        pattern
+    </th>
+</tr>
+{% for dicts in data_list %}
+    <tr>
+        {% for value in dicts.values() %}
+            {% if value == "" %}
+                <td>None</td>
+            {%  else %}
+                <td>{{value}}</td>
+            {%  endif %}
+
+        {% endfor %}
+    </tr>
+{% endfor %}
+</table>
+</center>
+<br>
+<h3>your random cat fact:</h3>
+<b>{{ your_fact }}</b>
+</body>
+</html>

@@ -4,7 +4,6 @@
 # 2018-11-14
 
 import json
-
 import urllib.request
 
 from flask import Flask, render_template
