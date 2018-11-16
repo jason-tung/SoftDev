@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>many api test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cool.css') }}">
+</head>
+<body>
+<h1> this is my test for many apis!</h1>
+<h2>random.dog</h2>
+<h4>very cool api that gives a random picture/gif of a dog!</h4>
+{% if dog[-3:].lower() == "mp4" or dog[-3:].lower() == "webm"%}
+    <video  height="500" controls autoplay>
+      <source src="{{ dog }}" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+{% else %}
+    <img src = "{{ dog }}" height = 500px;>
+{% endif %}
+<br>
+<h2>boredapi</h2>
+<h4>gives random activity with some stats if you're bored!</h4>
+{%  for k,v in bored_dict.items() %}
+    <b>{{ k }}</b>: {{ v }}
+    <br>
+{%  endfor %}
+<br>
+<h2>dog-api</h2>
+<h4>very cool api that gives a picture of a dog! breed can be specified/parsed.<br>
+    here are two images of random dogs followed by two pictures of poodles</h4>
+{%  for k,v in dogs.items() %}
+    <h4>{{ k }}</h4>
+    <img src="{{ v }}" height = 300px;>
+    <br>
+    <br>
+{%  endfor %}
+
+</body>
+</html>
