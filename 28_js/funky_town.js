@@ -1,3 +1,9 @@
+ // azrael - Jason Tung and Vincent Chi
+ // SoftDev1 pd8
+ // K28 -- Sequential Progression
+ // 2018-12-18
+
+
 var fibonacci = (args) =>{
   if (args < 0){
       return 0;
