@@ -4,26 +4,27 @@
  // 2018-12-18
 
 
-var fibonacci = (args) =>{
-  if (args < 0){
-      return 0;
-  };
-  if (args < 2){
-      return args;
-  }
-  return fibonacci(args - 1) * args;
+var fibonacci = function(n){
+	if (n < 2)
+		return n;
+	else
+		return fibonacci(n - 1) + fibonacci(n - 2);
 };
 
-var gcd = (a,b)=> {
-    if (b == 0){
-        return a;
-    };
-    if (a < b){
-        return gcd(b,a);
-    };
-    return (a-b,b);
+function gcd(a, b)
+{
+    temp = b;
+    while(b != 0)
+    {
+        temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
 };
 
-var randomStudent = (list) =>{
-  return list[Math.floor(Math.random()*list.length)];
+students = ["dog", "cat", "tbm", "dw", "k"];
+
+var randomStudent = () =>{
+  return students[Math.floor(Math.random()*students.length)];
 };
