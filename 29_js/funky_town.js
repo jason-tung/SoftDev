@@ -59,4 +59,4 @@ gcdButton.addEventListener('click', function(){
 
 var studentButton = document.getElementById("rs");
 //console.log(studentButton);
-studentButton.addEventListener('click', function(){disp("rsres",randomStudent())});
+studentButton.addEventListener('click', function(e){console.log(e);disp("rsres",randomStudent())});
