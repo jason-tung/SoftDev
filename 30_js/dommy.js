@@ -9,6 +9,7 @@ var listevent = (x) =>{
     x.addEventListener('mouseout', function(){head.innerHTML = "Hello World!"});
     x.addEventListener('click', function(){
         x.remove();
+	head.innerHTML = "Hello World!";
         lcount--;
     });
 };
@@ -56,3 +57,5 @@ var fib = (n) => {
         return hey[(inc - 1) % 2];
     }
 }
+
+
